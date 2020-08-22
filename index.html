@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="head-navigate">
       <nav>
-        <a href="">WebStudio</a>
-        <ul>
+        <a href="./index.html"
+          ><span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span></a
+        >
+        <ul class="site-nav list">
           <li>
             <a href="">Студия</a>
           </li>
           <li>
-            <a href="">Портфолио</a>
+            <a href="./portfolio.html">Портфолио</a>
           </li>
           <li>
             <a href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <ul class="contact-nav list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="email"
+            >info@devstudio.com</a
+          >
+        </li>
         <li><a href="tel:+30961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section>
-        <img src="./images/Bg.png" alt="фон" />
+      <section class="hero">
         <h1>Эффективные решения для вашего бизнесса</h1>
-        <a href="">Заказать услугу</a>
+        <a href="" class="hero-link">Заказать услугу</a>
       </section>
-      <section>
+      <section class="section advantage">
         <ul>
           <li>
             <h3>Внимание к деталям</h3>
@@ -65,57 +80,55 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="section works">
+        <h2 class="works-title">Чем мы занимаемся</h2>
         <ul>
           <li>
-            <img src="./images/img.png" alt="фото#1" width="370" />
+            <img src="./img/box1.jpg" alt="фото1" width="370" height="294" />
           </li>
           <li>
-            <img src="./images/img.png" alt="Пфото#2" width="370" />
+            <img src="./img/box2.jpg" alt="фото2" width="370" height="294" />
           </li>
           <li>
-            <img src="./images/box3.png" alt="фото#3" width="370" />
+            <img src="./img/box3.jpg" alt="фото3" width="370" height="294" />
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
+      <section class="section command">
+        <h2 class="command-title">Наша команда</h2>
         <ul>
           <li>
-            <img src="./images/img(1).png" alt="фото участника" width="270" />
+            <img src="./img/demjanenko.jpg" alt="foto Demjanenko" width="270" />
             <h3>Игорь Демьяненко</h3>
             <p>Product Designer</p>
           </li>
           <li>
-            <img src="./images/img(1).png" alt="фото участника" width="270" />
+            <img src="./img/repina.jpg" alt="foto Repina" width="270" />
             <h3>Ольга Репина</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/img(1).png" alt="фото участника" width="270" />
+            <img src="./img/tarasov.jpg" alt="foto Ermakov" width="270" />
             <h3>Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
-            <img
-              src="./images/img(3).png"
-              alt="фото Михаила Ермакова"
-              width="270"
-            />
+            <img src="./img/ermakov.jpg" alt="foto Ermakov" width="270" />
             <h3>Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <img src="./images/Footerbg.png" alt="фон-футера" width="1600" />
+    <footer class="footer">
       <nav>
-        <a href="">WebStudio</a>
+        <a href="./index.html"
+          ><span class="logo-web">Web</span
+          ><span class="studio-web-footer">Studio</span></a
+        >
       </nav>
-      <address>
-        г. Киев, пр-т Леси Украинки, 26<br />
+      <address class="adress">
+        <span class="adress-name">г. Киев, пр-т Леси Украинки, 26<br /></span>
         <a href="mailto:info@example.com">info@example.com</a><br />
         <a href="tel:+380991111111">+38 099 111 11 11</a>
       </address>

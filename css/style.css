@@ -1,0 +1,179 @@
+/* цвет основного текста - */
+/* вторичный цвет текста -  */
+/* акцент -  */
+/* цвет фона */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  color: var(--main-text-color);
+}
+
+.logo-web {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.logo-studio {
+  color: var(--title-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.contact-nav a {
+  color: var(--main-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.contact-nav a:hover,
+.contact-nav a:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.section h2,
+.section h3 {
+  color: var(--title-text-color);
+}
+
+.hero-link {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.section.works {
+  background-color: #e5e5e5;
+}
+
+.section.command {
+  background-color: #f5f4fa;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.studio-web-footer {
+  color: #ffffff;
+}
+
+.adress-name {
+  color: #ffffff;
+}
+
+.adress a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.advantage h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.advantage p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.works-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.command-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.command h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.command p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.adress {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.features-link a {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.features-link a:hover,
+.features-link a:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.portfolio {
+  background-color: #e5e5e5;
+}
+
+.features-link a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.services-list h3 {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.services-list p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
