@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --main-text-color: #757575;
   --title-text-color: #212121;
@@ -18,25 +28,58 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.head {
+  display: flex;
+  align-items: center;
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+}
+
 .logo-link {
-  text-decoration: none;
+  padding-right: 92px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .logo-studio {
   color: var(--title-text-color);
 }
 
+.site-nav {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 2%;
   text-decoration: none;
 }
 
@@ -51,19 +94,39 @@ body {
   color: var(--accent-color);
 }
 
+.contact-nav {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 0px;
+}
+
+.contact-nav .item + .item {
+  margin-left: 50px;
+}
+
 .contact-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0px;
   color: var(--main-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 2%;
   text-decoration: none;
 }
 
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding: 200px 452px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero h1 {
@@ -71,7 +134,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 6%;
 }
 
 .section h2,
@@ -80,6 +142,14 @@ body {
 }
 
 .hero-link {
+  display: inline-block;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+  margin-left: auto;
+
   color: var(--white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -88,19 +158,42 @@ body {
   line-height: 1.9;
   text-align: center;
   text-decoration: none;
+  text-decoration: none;
 }
 
 .section.advantage {
   background-color: var(--main-background-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.advantage-list .item {
+  width: 270px;
+}
+
+.advantage-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantage h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .advantage p {
+  margin: 0px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -108,40 +201,97 @@ body {
 
 .section.works {
   background-color: var(--main-background-color);
+  margin-bottom: 0px;
 }
 
 .works-title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.works-photo {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.works-photo .item {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.works-photo .item:last-child {
+  margin-right: 0;
 }
 
 .section.command {
   background-color: var(--second-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .command-title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
+.command-list {
+  display: flex;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.comand-members {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.comand-members:last-child {
+  margin: 0px;
+}
 .command h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .command p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
 
+.command li {
+  padding-bottom: 30px;
+}
+
+.comand-members {
+  margin-bottom: 0px;
+}
+
 .footer {
   background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 300px;
 }
 
 .logo-studio-footer,
@@ -155,6 +305,14 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.adress-name {
+  margin-bottom: 9px;
+}
+
+.adress > .mail {
+  margin-bottom: 9px;
 }
 
 .adress a {
@@ -171,7 +329,25 @@ body {
   background-color: var(--main-background-color);
 }
 
-.features-link a {
+.features-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.features-list a {
+  display: inline-block;
+  min-width: 73px;
+  border-radius: 4px;
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background-color: var(--second-background-color);
   font-family: inherit;
@@ -183,13 +359,43 @@ body {
   text-decoration: none;
 }
 
-.features-link a:hover,
-.features-link a:focus {
+.features-list a:hover,
+.features-list a:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 34px;
+  padding-bottom: 94px;
+  padding-left: 0px;
+}
+
+.services-list .item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.services-list .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.services-list .item:nth-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .services-list h2 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -197,7 +403,15 @@ body {
 }
 
 .services-list p {
+  margin-top: 4px;
+  margin-bottom: 0px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.services-link {
+  margin-bottom: 0px;
+  padding-bottom: 20px;
 }
