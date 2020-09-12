@@ -27,6 +27,10 @@ body {
   list-style: none;
 }
 
+.head-navigate {
+  height: 80px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -63,6 +67,7 @@ body {
   margin-left: 93px;
   padding: 0px;
   display: flex;
+  margin-top: 0px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -120,7 +125,7 @@ body {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding: 200px;
+  padding: 200px 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
@@ -266,6 +271,7 @@ body {
 }
 .command h3 {
   margin-bottom: 10px;
+  margin-top: 0px;
 
   font-weight: 500;
   font-size: 16px;
@@ -306,7 +312,6 @@ body {
 
 .adress {
   margin-top: 20px;
-
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -314,9 +319,14 @@ body {
   line-height: 1.7;
 }
 
-.adress > .mail {
+.adress-name {
+  display: block;
   margin-bottom: 9px;
-  margin-top: 9px;
+}
+
+.adress-mail {
+  display: block;
+  margin-bottom: 9px;
 }
 
 .adress a {
