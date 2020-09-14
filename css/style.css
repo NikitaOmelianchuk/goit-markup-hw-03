@@ -68,6 +68,7 @@ body {
   padding: 0px;
   display: flex;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .site-nav .item:not(:last-child) {
